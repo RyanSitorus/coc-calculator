@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoC Building Time Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clash of Clans Building Time Calculator</h1>
+        
+        <div class="input-group">
+            <label>Building Time:</label>
+            <input type="number" id="days" placeholder="Days" min="0">
+            <input type="number" id="hours" placeholder="Hours" min="0">
+            <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
+        </div>
+        
+        <div class="input-group">
+            <label>Potion Type:</label>
+            <div class="radio-group">
+                <label class="radio-label">
+                    <input type="radio" name="potionType" value="laboratory" checked>
+                    Laboratory (24x faster)
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="potionType" value="building">
+                    Building Potion (10x faster)
+                </label>
+            </div>
+        </div>
+        
+        <button onclick="calculate()">Calculate</button>
+        
+        <div id="result" class="result"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
